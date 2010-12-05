@@ -1,0 +1,6 @@
+pkg/*
+*.gem
+.bundle
+doc
+spec/redis.pid
+spec/dump.rdb
