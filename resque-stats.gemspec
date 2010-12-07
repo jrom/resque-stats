@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "resque-stats"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jordi Romero"]
   s.email       = ["jordi@jrom.net"]

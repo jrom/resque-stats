@@ -90,7 +90,8 @@ module Resque # :nodoc:
       # expiration.
       def self.increx(key, seconds)
         tmp = Resque.redis.get key
-        Resque.redis.setex key, seconds, (tmp.to_i + 1)
+        Resque.redis.set key, (tmp.to_i + 1)
+        Resque.redis.expire key, seconds
       end
     end
   end
